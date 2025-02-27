@@ -13,7 +13,7 @@ public class DisasterVictim {
     private String comments;
     private static int counter = 1;
 
-
+    // Checks if the date is in the right format
     private boolean isValidDateFormat(String date) {
         if (date == null || date.length() != 10) {
             return false;
@@ -66,7 +66,7 @@ public class DisasterVictim {
         this.personalBelongings = new Supply[0];
     }
 
-
+    // getters and setters
     public String getFirstName() {
         return firstName;
     }
