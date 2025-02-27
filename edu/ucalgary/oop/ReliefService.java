@@ -1,4 +1,4 @@
-package edu.calgary.oop;
+package edu.ucalgary.oop;
 
 public class ReliefService {
     private Inquirer inquirer;
