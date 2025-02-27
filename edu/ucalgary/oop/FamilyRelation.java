@@ -11,10 +11,22 @@ public class FamilyRelation {
 		this.personTwo = personTwo;
 	}
 
-	public DisasterVictim getPersonOne() { return personOne;}
-	public void setPersonOne(DisasterVictim personOne) { this.personOne = personOne; }
-	public String getRelationshipTo() { return relationshipTo; }
-	public void setRelationshipTo(String relationshipTo) { this.relationshipTo = relationshipTo; }
-	public DisasterVictim getPersonTwo() { return personTwo; }
-	public void setPersonTwo(DisasterVictim personTwo) { this.personTwo = personTwo; }
+	public DisasterVictim getPersonOne() {
+		 return personOne;
+		}
+	public void setPersonOne(DisasterVictim personOne) {
+		 this.personOne = personOne; 
+		}
+	public String getRelationshipTo() {
+		 return relationshipTo; 
+		}
+	public void setRelationshipTo(String relationshipTo) {
+		 this.relationshipTo = relationshipTo; 
+		}
+	public DisasterVictim getPersonTwo() {
+		 return personTwo; 
+		}
+	public void setPersonTwo(DisasterVictim personTwo) {
+		 this.personTwo = personTwo; 
+		}
 }
