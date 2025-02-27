@@ -3,21 +3,19 @@ package edu.ucalgary.oop;
 public class DisasterVictim {
     private String firstName;
     private String lastName;
-    private String dateOfBirth; // in format "yyyy-mm-dd"
+    private String dateOfBirth;
     private final int ASSIGNED_SOCIAL_ID;
     private FamilyRelation[] familyConnections;
     private MedicalRecord[] medicalRecords;
     private Supply[] personalBelongings;
-    private String entryDate;  // in format "yyyy-mm-dd"
+    private String entryDate;
     private String gender;
     private String comments;
     private static int counter = 1;
 
-    // Checks if the date is in the right format
     private boolean isValidDateFormat(String date) {
         return date != null && date.matches("\\d{4}-\\d{2}-\\d{2}");
     }
-
 
     public DisasterVictim(String firstName, String entryDate) {
         if (!isValidDateFormat(entryDate)) {
@@ -26,12 +24,10 @@ public class DisasterVictim {
         this.firstName = firstName;
         this.entryDate = entryDate;
         this.ASSIGNED_SOCIAL_ID = counter++;
-        // Initialize empty arrays.
         this.familyConnections = new FamilyRelation[0];
         this.medicalRecords = new MedicalRecord[0];
         this.personalBelongings = new Supply[0];
     }
-
 
     public DisasterVictim(String firstName, String entryDate, String dateOfBirth) {
         if (!isValidDateFormat(entryDate)) {
@@ -52,7 +48,6 @@ public class DisasterVictim {
         this.personalBelongings = new Supply[0];
     }
 
-    // getters and setters
     public String getFirstName() {
         return firstName;
     }
@@ -100,7 +95,6 @@ public class DisasterVictim {
         }
     }
 
-
     public FamilyRelation[] getFamilyConnections() {
         return familyConnections;
     }
@@ -124,7 +118,7 @@ public class DisasterVictim {
         int len = familyConnections.length;
         int index = -1;
         for (int i = 0; i < len; i++) {
-            if (familyConnections[i] == relation) { // using reference equality
+            if (familyConnections[i] == relation) {
                 index = i;
                 break;
             }
@@ -141,7 +135,6 @@ public class DisasterVictim {
         }
         familyConnections = newArray;
     }
-
 
     public MedicalRecord[] getMedicalRecords() {
         return medicalRecords;
@@ -162,7 +155,6 @@ public class DisasterVictim {
         newArray[len] = record;
         medicalRecords = newArray;
     }
-
 
     public Supply[] getPersonalBelongings() {
         return personalBelongings;
