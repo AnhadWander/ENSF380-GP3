@@ -21,4 +21,5 @@ public class Supply {
 	public String getType() {
 		return this.type;
 	}
+
 }
