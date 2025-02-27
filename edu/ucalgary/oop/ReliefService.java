@@ -2,12 +2,12 @@ package edu.ucalgary.oop;
 
 public class ReliefService {
     private Inquirer inquirer;
-    private DisaterVictim missingPerson;
+    private DisasterVictim missingPerson;
     private String dateOfInquiry;
     private String infoProvided;
     private Location lastKnownLocation;
 
-    public ReliefService(Inquirer inquirer, DisaterVictim missingPerson, String dateOfInquiry, String infoProvided, Location lastKnownLocation) {
+    public ReliefService(Inquirer inquirer, DisasterVictim missingPerson, String dateOfInquiry, String infoProvided, Location lastKnownLocation) {
         this.inquirer = inquirer;
         this.missingPerson = missingPerson;
         this.dateOfInquiry = dateOfInquiry;
@@ -23,11 +23,11 @@ public class ReliefService {
         this.inquirer = inquirer;
     }
 
-    public DisaterVictim getMissingPerson() {
+    public DisasterVictim getMissingPerson() {
         return missingPerson;
     }
 
-    public void setMissingPerson(DisaterVictim missingPerson) {
+    public void setMissingPerson(DisasterVictim missingPerson) {
         this.missingPerson = missingPerson;
     }
 
