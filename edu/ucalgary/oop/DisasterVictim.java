@@ -15,21 +15,7 @@ public class DisasterVictim {
 
     // Checks if the date is in the right format
     private boolean isValidDateFormat(String date) {
-        if (date == null || date.length() != 10) {
-            return false;
-        }
-        if (date.charAt(4) != '-' || date.charAt(7) != '-') {
-            return false;
-        }
-        for (int i = 0; i < date.length(); i++) {
-            if (i == 4 || i == 7) {
-                continue;
-            }
-            if (!Character.isDigit(date.charAt(i))) {
-                return false;
-            }
-        }
-        return true;
+        return date != null && date.matches("\\d{4}-\\d{2}-\\d{2}");
     }
 
 
